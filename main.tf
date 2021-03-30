@@ -3,8 +3,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "maqui" {
-  ami = "ami-013f17f36f8b1fefb"
-  instance_type = "t2.micro"
+  ami = "${var.amis["us-east-1-ubuntu18"]}}"
+  instance_type = "${var.instance_type.micro}"
   key_name = "concrete-terraform"
   tags = {
     Name = "maqu${count.index}"
