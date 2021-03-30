@@ -1,0 +1,6 @@
+*.hcl
+.terraform
+concrete-terraform
+concrete-terraform.pub
+*.tfstate
+*.backup
